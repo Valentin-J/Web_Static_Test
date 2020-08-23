@@ -1,0 +1,88 @@
+$bgc_color: white
+$link_color: black
+$border_color: black
+$font: 'Baloo Tamma 2', cursive
+$sign_btn: #2E76CF
+$sign_btn_hover: #173b67
+$search_btn: #FDD017
+$search_btn_hover: #caa612
+
+*
+  padding: 0
+  margin: 0
+
+body
+  background-color: $bgc_color
+  font-family: $font
+  header
+    nav
+      margin: 10px 20px 0 20px
+      height: 100px
+      a
+        text-decoration: none
+        color: $link_color
+      #topNav
+        display: flex
+        align-items: center
+        width: 100%
+        height: 49px //50 - border
+        border-bottom: $border_color 1px solid
+        padding-bottom: 5px
+        margin-bottom: 10px
+        .topBox
+          display: flex //Center middle box
+          flex: 1
+          justify-content: center
+          #signBtn
+            margin-right: auto
+            padding: 8px 15px
+            border-radius: 8px
+            border: 4px solid $sign_btn
+            background-color: $sign_btn
+            color: white
+            outline: 0
+            &:hover
+              background-color: $sign_btn_hover
+              border-color: $sign_btn_hover
+          #searchForm
+            margin-left: auto
+            display: flex
+            #searchField
+              width: 100%
+              height: 30px
+              padding: 0 5px
+              outline: 0
+              border: 2px groove
+              border-right: none
+              border-radius: 8px 0 0 8px
+            #searchBtn
+              height: 34px
+              padding: 0 5px
+              width: 34px
+              background-color: $search_btn
+              border: 4px solid $search_btn
+              border-radius: 0 8px 8px 0
+              &:hover
+                background-color: $search_btn_hover
+                border-color: $search_btn_hover
+                cursor: pointer
+      #bottomNav
+        display: flex
+        width: 100%
+        .bottomBox
+          display: flex
+          flex: 1
+          justify-content: center
+          a:hover
+            text-decoration: underline
+  main
+    height: calc(100vh - 171px) //-footer -header -margin -border
+    margin: 0 20px 10px 20px
+    background-color: navajowhite
+  footer
+    height: 50px
+    border-top: $border_color 1px solid
+    margin: 0 20px
+    display: flex
+    justify-content: center
+    align-items: center

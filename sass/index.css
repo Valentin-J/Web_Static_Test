@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Baloo Tamma 2", cursive;
+}
+body header nav {
+  margin: 10px 20px 0 20px;
+  height: 100px;
+}
+body header nav a {
+  text-decoration: none;
+  color: black;
+}
+body header nav #topNav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 49px;
+  border-bottom: black 1px solid;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+body header nav #topNav .topBox {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+body header nav #topNav .topBox #signBtn {
+  margin-right: auto;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 4px solid #2E76CF;
+  background-color: #2E76CF;
+  color: white;
+  outline: 0;
+}
+body header nav #topNav .topBox #signBtn:hover {
+  background-color: #173b67;
+  border-color: #173b67;
+}
+body header nav #topNav .topBox #searchForm {
+  margin-left: auto;
+  display: flex;
+}
+body header nav #topNav .topBox #searchForm #searchField {
+  width: 100%;
+  height: 30px;
+  padding: 0 5px;
+  outline: 0;
+  border: 2px groove;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+body header nav #topNav .topBox #searchForm #searchBtn {
+  height: 34px;
+  padding: 0 5px;
+  width: 34px;
+  background-color: #FDD017;
+  border: 4px solid #FDD017;
+  border-radius: 0 8px 8px 0;
+}
+body header nav #topNav .topBox #searchForm #searchBtn:hover {
+  background-color: #caa612;
+  border-color: #caa612;
+  cursor: pointer;
+}
+body header nav #bottomNav {
+  display: flex;
+  width: 100%;
+}
+body header nav #bottomNav .bottomBox {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+body header nav #bottomNav .bottomBox a:hover {
+  text-decoration: underline;
+}
+body main {
+  height: calc(100vh - 171px);
+  margin: 0 20px 10px 20px;
+  background-color: navajowhite;
+}
+body footer {
+  height: 50px;
+  border-top: black 1px solid;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */
